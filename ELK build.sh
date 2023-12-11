@@ -1,5 +1,9 @@
-#Linux Prerequisites
+#! /bin/bash
 
+clear
+
+echo "Stating installation Proccess"
+#Linux Prerequisites
 sudo apt update && sudo apt upgrade && sudo apt install && sudo apt autoremove 
 
 sudo sed  -i '6i vm.max_map_count=262144' /etc/sysctl.conf # auto adds persistent vm max for when system is restarted
